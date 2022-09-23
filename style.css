@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans',sans-serif;
+    scroll-behavior: smooth;
+}
+.navbar {
+background: #1f1f1f;
+height: 60px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 1.5rem;
+top: 0;
+z-index: 999;
+}
+.navCont {
+    display: flex;
+    justify-content: space-between;
+    height: 80;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding:  0 50px;
+}
+#navcontHome {
+    background: -webkit-linear-gradient(rgb(252, 45, 45),rgb(247, 0, 255));
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+.Navbarmenu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+}
+.navbar_item {
+    height: 80px;
+
+}
+.NavbarLinks {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    text-decoration: none;
+    height: 100%;
+    transition: all 0.3s ease-in; 
+}
+.NavbarLinks:hover {
+    background: -webkit-linear-gradient(rgb(252, 45, 45),rgb(247, 0, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in; 
+}
+.Port {
+    background-color: #1f1f1f;
+opacity: 1;
+background-image:  linear-gradient(30deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(150deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(30deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(150deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(60deg, #00000077 25%, transparent 25.5%, transparent 75%, #00000077 75%, #00000077), linear-gradient(60deg, #00000077 25%, transparent 25.5%, transparent 75%, #00000077 75%, #00000077);
+background-size: 20px 35px;
+background-position: 0 0, 0 0, 10px 18px, 10px 18px, 0 0, 10px 18px;
+}
+.Port_Con {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+    overflow-x: auto;
+}
+.MainWebsiteText {
+    background: -webkit-linear-gradient(rgb(122, 0, 102),rgb(247, 0, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 100px;
+    text-decoration: overline;
+    text-decoration-color: rgb(247, 0, 255);
+    text-decoration-thickness: 2px;
+}
+.Content {
+    color: #ffff;
+    font-size: 50px;
+}
+.BTN {
+    color: rgb(241, 0, 181);
+    background:  none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    box-shadow: 0px 0px 20px 10px rgb(109, 0, 82);
+    border: 1px solid rgb(241, 0, 181);
+    text-shadow: 0 0 0.25em currentColor;
+    transition: all 0.1s ease-in; 
+}
+.BTN:hover {
+    box-shadow: 0px 0px 10px 5px rgb(109, 0, 82); 
+    transition: all 0.1s ease-in; 
+}
+.Right_Text {
+    align-items: Top;
+    display:grid;
+    justify-content: center;
+    max-width: 300px;
+    margin: 1%;
+    padding: 200px;
+    text-align:  center;
+    grid-gap: 10px;
+    min-height: 500px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in; 
+    max-height: 500px;  
+}
+#IMG_COMP {
+    background-image: 
+    linear-gradient(to top,rgba(0,0,0, .8),rgb(255, 0, 234, 0.32)),
+    url('IMGPROC.png');
+}
+#FBMTEMPMAP {
+    background-image: 
+    linear-gradient(to top,rgba(0,0,0, .8),rgb(255, 0, 234, 0.32)),
+    url('FBMTEMPMAP.png');
+}
+#FBMTRN {
+    background-image: 
+    linear-gradient(to top,rgba(0,0,0, .8),rgb(255, 0, 234, 0.32)),
+    url('FBMT.png');
+}
+#NLPINT {
+    background-image: 
+    linear-gradient(to top,rgba(0,0,0, .8),rgb(255, 0, 234, 0.32)),
+    url('NLPIMG.png'); 
+}
+.Right_Text:hover {
+    padding: 220px;
+    transition: all 0.1s ease-in;   
+}
+.Content_InImg {
+    color: #ffff;
+    font-size: 30px;
+    text-shadow: 0 0 0.1em black;
+}
+.BTNINIMG {
+    backdrop-filter: blur(10px);
+    font-size: 1.5rem;
+    background: none;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border-color: white;
+    text-shadow: 0 0 0.2em black;
+    box-shadow: 0px 0px 4px 2px rgb(0, 0, 0);
+    width: 12rem;
+}
+::-webkit-scrollbar {
+    width: 1em;
+}
+::-webkit-scrollbar-track {
+    background: #1f1f1f;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background: rgb(163, 163, 163);
+    border: .2em solid #1f1f1f;
+}
