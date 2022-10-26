@@ -171,6 +171,16 @@ background-position: 0 0, 0 0, 10px 18px, 10px 18px, 0 0, 10px 18px;
     transition: all 0.2s ease-in; 
     max-height: 500px;  
 }
+#SBS_IMG {
+    background-image: 
+    linear-gradient(to top,rgba(0,0,0, .8),rgb(255, 0, 234, 0.32)),
+    url('SBS.png');
+}
+#GS {
+    background-image: 
+    linear-gradient(to top,rgba(0,0,0, .8),rgb(255, 0, 234, 0.32)),
+    url('GoreSystem.png');
+}
 #IMG_COMP {
     background-image: 
     linear-gradient(to top,rgba(0,0,0, .8),rgb(255, 0, 234, 0.32)),
