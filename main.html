@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Scroll Website</title>
+  <title> Cool Portfolio 😎</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
     integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
 </head>
 
 <body>  
@@ -16,9 +18,6 @@
       <ul class="Navbarmenu">
         <li class="navbar_item">
           <a href="#Home" class="NavbarLinks" id="hm">Home</a>
-        </li>
-        <li class="navbar_item">
-          <a href="#Pricing" class="NavbarLinks" id="Pricing">Pricing</a>
         </li>
         <li class="navbar_item">
           <a href="#Work" class="NavbarLinks" id="Work">works</a>
@@ -32,6 +31,8 @@
         Welcome
       </h1>
     </div>
+
+
     <div class="Port_Con">
       <h1 class="Content">
         I'm programming in many languages Lua, python,c++, and some java. I started my journey 7 years ago. From then on I created many projects that could be useful in many ways.
@@ -44,9 +45,13 @@
     </div>
     <div class="Port_Con">
       <h1 class="MainWebsiteText">
-        Recent works
+        Private Projects
       </h1>
     </div>
+
+
+    
+
     <div class="Port_Con"id="Works">
       <div class="Right_Text" id="IMG_COMP">
         <h1 class="Content_InImg">
@@ -104,6 +109,9 @@
       </div>
     </div>
 
+
+
+
     <!-- NLP -->
     <div class="Port_Con2">
       <h1 class="MainWebsiteText">
@@ -137,6 +145,7 @@
         <h1 class="Content_DOCS">
           Using the quadtree algorithm and png reader I was able to compress any image.
           The quadtree algorithm detects the number of changes that are going on in one region. if they change much then the region gets split
+          <div style="width: 100%; height: 0px; position: relative; padding-bottom: 53.125%;"><iframe src="https://streamable.com/e/7ogjwt" frameborder="0" width="100%" height="100%" allowfullscreen style="width: 800px; height: 320px; text-align:center ;"></iframe></div>
         </h1>
     </div>
     <!-- Image Comp -->
@@ -156,6 +165,7 @@
         <h1 class="Content_DOCS">
           This project creates a 100x100 noise map then the pointer gets the first point and pushes neighbors that have close value to the original into the table. neighbors then get it neighbors and over and over till. then another algorithm sets the region value. After all these steps function returns a full map.
         </h1>
+        
     </div>
     <!-- Biom -->
 
@@ -190,8 +200,9 @@
               </h1>
         </div>
         <h1 class="Content_DOCS">
-          Using Spring equasion i was able to acive the softbody simulation in roblox
+          Using Hooke's law i was able to acive the softbody simulation in roblox
           Every point in the cube is connected with eachother by spring with offsets.
+          <div style="width: 100%; height: 0px; position: relative; padding-bottom: 53.125%;"><iframe src="https://streamable.com/e/4khior" frameborder="0" width="100%" height="100%" allowfullscreen style="width: 800px; height: 320px; text-align:center ;"></iframe></div>
         </h1>
     </div>
     <!-- FBM -->
@@ -213,7 +224,91 @@
         </h1>
     </div>
     <!-- FBM -->
+    <div class="Port_Con2">
+      <h1 class="MainWebsiteText">
+        Fluid Simulation
+      </h1>
+    </div>
+    <div class="DOCS" id="GSS">
+        <div class="DOCS_TEXT" style="background-image: linear-gradient(to top,rgba(0,0,0, .8),rgb(255, 0, 234, 0.32)),url('fluidsim.png');">
+              <h1 class="Content_InImg">
+                Fluid Simulation (Work In Progress)
+              </h1>
+        </div>
+        <h1 class="Content_DOCS">
+          Every point Interacts with it neighbors. When it will be done it will support Surface tension and will be more stable
+          <div style="width: 100%; height: 0px; position: relative; padding-bottom: 53.125%;"><iframe src="https://streamable.com/e/6m9oy0" frameborder="0" width="100%" height="100%" allowfullscreen style="width: 800px; height: 320px; text-align:center ;"></iframe></div>
+        
+        </h1>
+        
+    </div>
+
+    <!-- FBM -->
+    <div class="Port_Con2">
+      <h1 class="MainWebsiteText">
+        3d Engine
+      </h1>
+    </div>
+    <div class="DOCS" id="GSS">
+        <div class="DOCS_TEXT" style="background-image: linear-gradient(to top,rgba(0,0,0, .8),rgb(255, 0, 234, 0.32)),url('3dengine.png');">
+              <h1 class="Content_InImg">
+                3d Engine
+              </h1>
+        </div>
+        <h1 class="Content_DOCS">
+          Had an idea to learn more about matrices. lernt many things about rotation, projection etc.
+          <div style="width: 100%; height: 0px; position: relative; padding-bottom: 53.125%;"><iframe src="https://streamable.com/e/ne8xqw" frameborder="0" width="100%" height="100%" allowfullscreen style="width: 800px; height: 320px; text-align:center ;"></iframe></div>
+          <pre class="Content_DOCS" >
+            <code class="Lua" style="font-size: 15px; text-align: left;"id="SC">
+                    -- kind of showcase :D
+                    local function ProjectPoints()
+                      local M = Untils.GetCameraIntrinsicProjectionMatrix(90,script.Parent.AbsoluteSize.Y,script.Parent.AbsoluteSize.X)
+                      local Points = {}
+                      local D3Points = {}
+                      local Offsets = {}
+                      local RotationLookVector = CamRot
+                      local Target = CamPos+RotationLookVector
+                      local Cammatrix = Untils.LookAtMatrix(CamPos,Target,Vector3.new(0,1,0))
+                      local MatrixView = MatrixLib.inverseMatrix(Cammatrix)
+                      for ind,Object:Obj in pairs(Scene) do
+                        if math.abs((Object.Position-CamPos).Magnitude) > RenderDistance then
+                          continue
+                        end
+                        local RX,RY,RZ = Untils.GetRotationMatrix(Object.Rotation)
+                        Points[ind] = {}
+                        D3Points[ind] = {}
+                        Offsets[ind] = {}
+                        for i,point in pairs(Object.Points) do
+                          -- Project points--
+                          local RXM = MatrixLib.MNVMultiply(RX,point)
+                          local RXYM = MatrixLib.Multiply(RY,RXM)
+                          local RXYZM = MatrixLib.Multiply(RZ,RXYM)
+                          local Pos = MatrixLib.MatrixToVec(RXYZM)
+                          
+                          local WorldPos = Object.Position+Pos+CamPos
+                          local Matrix = MatrixLib.Vec3ToMatrix4By1(WorldPos)
+                          local ret = MatrixLib.Multiply(MatrixView,Matrix)
+                          local NP = Vector3.new(ret[1][1],ret[2][1],ret[3][1])
+                          D3Points[ind][i]=NP
+  
+                          local Proj = Untils.MatrixMultiplicationMatrix4by1Project(M,NP)
+                          local V2Pos:Vector2 = Vector2.new((Proj[1][1]+1)/2*script.Parent.AbsoluteSize.X,(Proj[2][1]+1)/2*script.Parent.AbsoluteSize.Y)
+                          Points[ind][i]= V2Pos
+                          Offsets[ind][i] = Proj[3][1]
+                        end
+                      end
+                      return Points,D3Points
+                    end
+            </code>
+          </pre>
+        </h1>
+        
+    </div>
+    
   </div>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
 </body>
 
 </html>
